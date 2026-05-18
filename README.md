@@ -1,4 +1,4 @@
-# 🎯 RecMind — MERN Stack Recommendation Engine
+# RecMind — MERN Stack Recommendation Engine
 
 A full-stack recommendation platform built with the MERN stack featuring a **hybrid recommendation algorithm** that combines collaborative filtering and content-based filtering to deliver personalized suggestions.
 
@@ -7,7 +7,7 @@ A full-stack recommendation platform built with the MERN stack featuring a **hyb
 
 ---
 
-## ✨ Features
+## Features
 
 - **Hybrid Recommendation Algorithm** — 70% item-based collaborative filtering + 30% content-based filtering
 - **Real-time Behavior Tracking** — Views, clicks, ratings, wishlists, purchases
@@ -19,7 +19,7 @@ A full-stack recommendation platform built with the MERN stack featuring a **hyb
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────┐      ┌──────────────┐      ┌─────────────────┐
@@ -37,7 +37,7 @@ A full-stack recommendation platform built with the MERN stack featuring a **hyb
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 18+
@@ -78,7 +78,7 @@ docker-compose up --build
 
 ---
 
-## 🔑 Demo Credentials
+## Demo Credentials
 
 | Email | Password |
 |-------|----------|
@@ -87,7 +87,7 @@ docker-compose up --build
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -104,7 +104,7 @@ docker-compose up --build
 
 ---
 
-## 🧠 Recommendation Algorithm
+## Recommendation Algorithm
 
 ### Collaborative Filtering (Item-Based)
 - Builds user-item interaction matrix
@@ -127,7 +127,7 @@ Final Score = 0.7 × CF_Score + 0.3 × CB_Score
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 recmind/
@@ -158,7 +158,7 @@ recmind/
 
 ---
 
-## 📝 Resume Bullets
+## Resume Bullets
 
 **Full Stack:**
 > Architected MERN stack recommendation platform with hybrid collaborative + content-based filtering algorithm serving personalized content via REST API
@@ -171,10 +171,10 @@ recmind/
 
 ---
 
-## 📄 License
+## License
 
 MIT
 
 ---
 
-Built with ❤️ for portfolio demonstration.
+Built for portfolio demonstration.
