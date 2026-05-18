@@ -35,6 +35,8 @@ app.use('/api/auth', authRoutes);
 app.use('/api/items', itemRoutes);
 app.use('/api/recommendations', recRoutes);
 
+const path = require('path');
+
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ 
@@ -43,6 +45,16 @@ app.get('/api/health', (req, res) => {
     engine: recEngine.getStats()
   });
 });
+
+// Serve static assets if in production
+if (process.env.NODE_ENV === 'production') {
+  // Set static folder
+  app.use(express.static(path.join(__dirname, '../client/build')));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../client', 'build', 'index.html'));
+  });
+}
 
 // Error handler
 app.use((err, req, res, next) => {
